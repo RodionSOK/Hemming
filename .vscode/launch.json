@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "(lldb) Запустить",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": ["${input:number}"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build"
+        }, 
+
+    ], 
+    "inputs": [
+        {
+            "id": "number", 
+            "description": "My numbers", 
+            "type": "promptString", 
+            "default": "8"
+        }
+    ]
+}

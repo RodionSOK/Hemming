@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build", 
+            "type": "shell",
+            "command": "gcc -g hemming.c",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Сборка проекта с помощью gcc"
+        }, 
+        {
+            "label": "Test", 
+            "type": "shell", 
+            "command": "./a.out", 
+            "group": "test", 
+            "dependsOn": ["Build"]
+        }
+    ]
+}
